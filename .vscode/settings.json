@@ -1,0 +1,21 @@
+{
+    "cucumberautocomplete.steps": [
+        "./cypress/Steps/*.ts",
+        
+    ],
+    "cucumberautocomplete.syncfeatures": "./cypress/integration/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.pages": {
+        "all":"../*.ts"
+    },
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.minimap.enabled": true,
+    "window.zoomLevel": 0,
+    "files.autoSave": "afterDelay",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.accessibilitySupport": "on"
+}

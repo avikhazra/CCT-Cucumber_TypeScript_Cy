@@ -1,0 +1,39 @@
+{
+  "name": "cct",
+  "version": "1.0.0",
+  "description": "cypresscucumbertypescript",
+  "main": "index.js",
+  "dependencies": {
+    "@types/cucumber": "^4.0.7",
+    "@types/node": "^12.7.12",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^6.6.0",
+    "multiple-cucumber-html-reporter": "^1.13.1",
+    "tsify": "^4.0.1",
+    "typescript": "^3.6.3"
+  },
+  "devDependencies": {
+    "@types/cypress-cucumber-preprocessor": "^1.12.0",
+    "cypress": "^3.6.0",
+    "cypress-cucumber-preprocessor": "^1.16.2",
+    "eslint-plugin-cypress": "^2.7.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/Steps/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/cypress-tags run -e TAGS=@avik",
+    "test1": "./node_modules/.bin/cypress open",
+    "test2": "cypress run --spec **/*.features",
+    "Report":" node ./report.js"
+  },
+  "author": "avik",
+  "license": "ISC"
+}
